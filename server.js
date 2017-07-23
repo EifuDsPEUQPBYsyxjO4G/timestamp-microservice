@@ -17,6 +17,16 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/api/whoami', (req, res) => {
+    var useragent = req.headers['user-agent'];
+
+    res.json({
+        ipaddress: req.headers['x-forwarded-for'].split(',')[0] || req.connection.remoteAddress,
+        language: req.headers['accept-language'].split(',')[0],
+        software: useragent.substring(useragent.indexOf('(') + 1, useragent.indexOf(')')),
+    });
+});
+
 app.get('/:time', (req, res) => {
   var str = req.params.time;
   

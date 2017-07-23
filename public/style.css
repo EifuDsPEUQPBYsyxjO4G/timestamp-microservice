@@ -11,11 +11,14 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 25px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
 }
 
 h1 {
   font-weight: bold;
-  color: pink;
 }
 
 .bold {
@@ -79,4 +82,13 @@ footer > a {
 
 .nicejob {
   text-decoration: line-through;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }

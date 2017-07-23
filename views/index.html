@@ -10,8 +10,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
+    <title>Timestamp Microservice</title>
     <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,13 +19,11 @@
   </head>
   <body>
     <header>
-      <h1>
-        A Dream of the Future
-      </h1>
+      <h1>Timestamp Microservice</h1>
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
+      <!--<p class="bold">Oh hi,</p>
       <p>Tell me your hopes and dreams:</p>
       <form>
         <input type="text" maxlength="100" placeholder="Dreams!">
@@ -35,20 +32,31 @@
       <section class="dreams">
         <ul id="dreams">
         </ul>
-      </section>
+      </section>-->
+      <b>User stories:</b>
+      <ol>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ol>
+      <h3>Example usage:</h3>
+      <code>https://versed-discovery.glitch.me/December%2015,%202015</code><br/>
+      <code>https://versed-discovery.glitch.me/1450137600</code>
+      <h3>Example output:</h3>
+      <code>{ "unix": 1450137600, "natural": "December 15, 2015" }}</code>
     </main>
 
-    <footer>
+    <!--<footer>
       <a href="https://glitch.com">
         Remix this in Glitch
       </a>
-    </footer>
+    </footer>-->
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+    <!--<script src="/client.js"></script>-->
 
   </body>
 </html>

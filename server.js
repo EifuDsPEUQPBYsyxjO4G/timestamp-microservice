@@ -54,13 +54,6 @@ var dreams = [
   "Wash the dishes"
 ];*/
 
-app.use((req, res, next) => {
-  
-
-  // Here lies my fallen regex
-  // var calendarMatch = /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)(?:.*?)(\d{2})(?:.*?)(\d{4})/;
-});
-
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
